@@ -89,4 +89,4 @@ zram-generator
 polybar
 rofi
 ttf-monoid-nerd
-ttf-ner-fonts-symbols
+ttf-nerd-fonts-symbols-mono
