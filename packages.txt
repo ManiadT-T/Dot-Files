@@ -86,3 +86,5 @@ yazi
 zathura
 zathura-pdf-mupdf
 zram-generator
+polybar
+rofi
