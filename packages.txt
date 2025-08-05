@@ -88,3 +88,5 @@ zathura-pdf-mupdf
 zram-generator
 polybar
 rofi
+ttf-monoid-nerd
+ttf-ner-fonts-symbols
