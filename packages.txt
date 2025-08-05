@@ -90,3 +90,4 @@ polybar
 rofi
 ttf-monoid-nerd
 ttf-nerd-fonts-symbols-mono
+tectonic
