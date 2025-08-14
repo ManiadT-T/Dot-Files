@@ -1,9 +1,12 @@
 return {
   "akinsho/toggleterm.nvim",
   version = "*",
-  keys = { { "<leader>t", mode = { "n", "t" } } }, -- lazy-load on first <leader>t press
+  lazy = false, -- load at startup
+  priority = 900, -- load early so it's ready immediately
   config = function()
-    require("toggleterm").setup{
+    local toggleterm = require("toggleterm")
+
+    toggleterm.setup{
       open_mapping = [[<leader>t]],
       direction = "float",
       persist_size = true,
@@ -15,5 +18,11 @@ return {
         winblend = 10,
       }
     }
+
+    -- Start a hidden terminal at launch so it’s ready
+    local Terminal = require("toggleterm.terminal").Terminal
+    local hidden_term = Terminal:new({ hidden = true })
+    hidden_term:spawn() -- launch in background
   end
 }
+
