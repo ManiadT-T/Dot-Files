@@ -16,3 +16,4 @@ sudo npm install -g pyright
 sudo pacman -S clang
 yay -S fortls
 sudo pacman -S texlab
+yay -S lua-language-server
