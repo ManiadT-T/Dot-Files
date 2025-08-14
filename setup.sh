@@ -12,3 +12,7 @@ cp -r ~/dotfiles/.config/* ~/.config/
 # Install packages
 sudo pacman -Syu --needed - < ~/dotfiles/packages.txt
 yay -S --needed - < ~/dotfiles/aur-packages.txt
+sudo npm install -g pyright
+sudo pacman -S clang
+yay -S fortls
+sudo pacman -S texlab
